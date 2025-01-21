@@ -1,0 +1,70 @@
+
+   .card {
+    width: fit-content;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 5px;
+  }
+  .card .image {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fffdcb;
+  }
+  .cardcontainer {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardcontainer h4 {
+    
+    width: fit-content;
+    color: #262626;
+    font-family: Archivo;
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin: 0%;
+  }
+  .cardcontainer p {
+    color: #262626;
+    font-family: Archivo;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+
+  @media only screen and (max-width: 768px){
+    .card{
+     width: 350px;
+    }
+    .card .image{
+      width: 58px;
+      height: 58px;
+    }
+    .cardcontainer h4{
+      font-family: Archivo;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; 
+letter-spacing: 0.36px;
+    }
+    .cardcontainer p{
+      font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: 0.32px;
+    }
+  }

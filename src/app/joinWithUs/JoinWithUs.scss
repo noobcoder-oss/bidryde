@@ -1,0 +1,387 @@
+.joinWithUsLayout {
+  overflow-x: hidden;
+  margin: 0 0%;
+  font-family: "Archivo";
+}
+
+.left_right_margin{
+  margin: 0px auto;
+  padding: 2px 1.8%;
+  width: 90%;
+
+}
+
+.intro {
+  background-color: #276EBC;
+  width: 95%;
+  height: 55vh;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.intro .clouds {
+  width: 100%;
+  height: 30%;
+  background-image: url('../../assets/images/JoinWithUs/clouds.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.intro_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro_text {
+  width: 50%;
+  padding: 3% 5%;
+}
+
+.intro_text p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.intro_text span {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.intro_image {
+  width: 40%;
+  text-align: center;
+}
+
+.intro_image img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.sectionHeader {
+  margin: 6% 0 0 0;
+}
+
+.cards {
+  width: 95%;
+  margin: 0 3%;
+}
+
+.cards>p {
+  font-family: Archivo;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.cards .p{
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+.formSection {
+  width: 95%;
+  margin: 0 2%;
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.heading img{
+  width: 30%;
+  height: 28%;
+  margin-left: 10%;
+}
+
+.form{
+  width: 35%;
+}
+
+p.sectionTitleTextStyling.undefined{
+  font-size: 43px;
+  font-family: Archivo;
+  font-weight: bold;
+}
+
+p.tagLinesTextStyling.undefined{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.joinSectionHeader__top{
+  margin: 6% auto;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: fit-content;
+
+}
+
+.joinSectionHeader__top h1{
+  font-size: 45px;
+}
+
+.joinSectionHeader__top p{
+  	font-size: 25px;
+    margin-bottom: 3%;
+}
+
+.p__header__join__top{
+  width: 100%;
+  font-size: 15px;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 14px;
+  margin-bottom: 2%;
+
+
+  
+}
+
+
+.joinSectionHeader__bottom{
+  margin-left: 5%;
+  margin-bottom: 8%;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: fit-content;
+
+}
+
+
+.joinSectionHeader__bottom h1{
+  font-size: 38px;
+  font-weight: bold;
+  // letter-spacing: 2px;
+  width: max-content ;
+}
+
+.p__header__join__bottom{
+  width: 100%;
+  font-size: 18px;
+  align-items: center;
+  margin-top: -2%;
+  
+}
+
+.divider{
+  width: 100%;
+}
+
+
+.p__header__join__top h1{
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .intro {
+      height: 50vh;
+  }
+
+  .intro .clouds {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../../assets/images/JoinWithUs/cloudsMobileAboutbg.png');
+  }
+
+  .intro_content {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .intro_text {
+      width: 100%;
+      padding: 3% 5%;
+  }
+
+  .intro_text p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -21px;
+  }
+
+  .intro_text span {
+      font-size: 22px;
+  }
+
+  .intro_image {
+      width: 100%;
+  }
+
+  .intro_image img {
+      width: 80%;
+      height: 70%;
+  }
+
+  .cards>p {
+      font-family: Archivo;
+      font-size: 16px;
+      font-weight: 600;
+  }
+
+  .cards .p{
+    font-size: 18px;
+  }
+
+  .formSection {
+      flex-direction: column;
+  }
+
+  .heading{
+      width: 100%;
+  }
+
+  .heading img{
+      display: none;
+  }
+
+  .form{
+    
+    align-self: center;
+      width: 70%;
+  }
+
+  .joinSectionHeader__top{
+    margin: 18% auto;
+    margin-bottom: 2%;
+  }
+
+  .joinSectionHeader__bottom{
+    margin: 5% auto;
+    margin-bottom: 2%;
+    
+  }
+
+  .joinSectionHeader__bottom h1{
+    font-size: 18px;
+    margin-bottom: 3%;
+  }
+
+  .joinSectionHeader__bottom p{
+    margin: 1% auto;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 3%;
+
+  }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .cards {
+    width: 95%;
+    margin: 3% 3%;
+  }
+  
+  .cards>p {
+    font-family: Archivo;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .form{
+    
+    width: 95%;
+}
+  .cards .p{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7%;
+    margin-top: 10px;
+  }
+
+  .joinSectionHeader__top{
+    margin: 10% auto;
+    margin-bottom: 5%;
+  }
+
+  .joinSectionHeader__top h1{
+    font-size: 30px;
+    margin-top: 6%;
+    font-family: 'Archivo';
+  }
+
+  .joinSectionHeader__top p{
+    font-size: 10px;
+    margin-bottom: 3%;
+  }
+
+  .joinSectionHeader__bottom h1{
+    font-size: 23px;
+  }
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .joinSectionHeader__top{
+    margin: 16% auto;
+    margin-bottom: 10%;
+  }
+
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .joinSectionHeader__top{
+    margin: 15% auto;
+    margin-bottom: 10%;
+  }
+
+  .cards .p{
+    font-size: 17px;
+  }
+}
+
+
+
+@media screen and (max-width: 380px) {
+
+  
+  
+
+  
+  .joinSectionHeader__top{
+    margin-top: 30%;
+  }
+
+  .joinSectionHeader__top h1{
+    font-size: 2rem;
+  }
+  .joinSectionHeader__top p{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  
+  .joinSectionHeader__top p{
+    font-size: 100%;
+    margin-bottom: 3%;
+  }
+
+  .formSection{
+    width: 100%;
+  }
+
+
+
+
+}

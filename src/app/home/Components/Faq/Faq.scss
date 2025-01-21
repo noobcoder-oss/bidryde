@@ -1,0 +1,160 @@
+.faq {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &Container {
+    padding: 0.5rem;
+    width: 79%;
+    background-color: #F6F1F1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .SectionTitle {
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: Black;
+      // max-width: fit-content;
+
+      h1 {
+      font-size: 3.175rem;
+        letter-spacing: 2px;
+        font-family: 'Archivo Black';
+      }
+
+      p {
+        font-size: 1.375rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    &Categories {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .faqChip {
+        cursor: pointer;
+        padding: 5px 1rem;
+        border: 1px solid #262626;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border-radius: 16px;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          object-fit: contain;
+        }
+      }
+      
+
+    
+      
+      
+
+      .faqChip.active {
+        background-color: #fff;
+        border: none;
+      }
+    }
+
+    &Questions {
+      width: 95%;
+      margin-top: 1.5rem;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    h3{
+      font-weight: 400;
+    }
+  }
+}
+
+.collapsiblePanel__headerleft {
+
+  height: 50px;
+   
+   
+    }
+
+
+.collapsiblePanel {
+   //background-color: #cec7c7 !important;
+    border-radius: 20px;
+
+    }
+
+    .specificFaq .collapsiblePanel {
+     // background-color: white; /* Apply white background */
+    }
+    
+.btn__FAQ {
+  background-color: #ffffff;
+  color: #276EBC;
+  margin: 2rem 1rem;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: 1px solid #276EBC;
+  width: 15%;
+  border-radius: 5px;
+}
+
+.btn__FAQ:hover {
+  background-color: #ffffff90;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 968px) {
+  .btn__FAQ {
+    width: 230px;
+    border-radius: 10px;
+  }
+
+  .faq {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .SectionTitle {
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: Black;
+    // max-width: fit-content;
+
+    h1 {
+    font-size: 2.175rem!important;
+      letter-spacing: 2px;
+      font-family: 'Archivo Black';
+    }
+
+    p {
+      font-size: 0.875rem!important;
+     // margin-bottom: 5px;
+    }
+  }
+}

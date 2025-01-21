@@ -1,0 +1,50 @@
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .scroll-animation {
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFFFFF;
+    color: #276EBC;
+    margin-right: 60%;
+    font-size: 0;
+    border: 2px solid #276EBC;
+    border-radius: 30px 0 0 30px;
+    height: 40px;
+    text-align: center;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Or fixed, depending on how you want it to behave */
+    z-index: -1; /* Or fixed, depending on how you want it to behave */
+    
+    transform-origin: right;
+    transition: width 0.1s ease-out, opacity 0.3s ease-in-out, transform 0.5s ease-in-out, font-size 0.1s ease-in-out;
+  
+    &.visible {
+      width: 130px;
+      opacity: 1;
+      font-size: 0.85rem;
+      transform: scaleX(1);
+      transform: translateX(-7%);
+    }
+   
+  }
+  
+  @media screen and (max-width: 968px) {
+    .buttonHolder {
+      display: none;
+    }
+  
+    .icon {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+  

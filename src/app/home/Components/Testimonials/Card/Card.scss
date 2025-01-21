@@ -1,0 +1,181 @@
+.testimonialCard {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 50px;
+  p {
+    margin: 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 16px;
+    color: #444;
+  }
+  img {
+    position: relative;
+    margin-top: -25px;
+    width: 48px;
+    height: 48px;
+  }
+  &Container {
+    width: 475px;
+    height: 15.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f6f1f1;
+    border-radius: 36px;
+    padding-top: 1rem;
+  }
+  &ContainerProfile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.testimonialCardContainer p {
+}
+.profileImageWrapper {
+  width: 60.2px;
+  height: 64.21px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileName {
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0;
+}
+@media (min-width: 1198px) and (max-width: 1400px) {
+  .testimonialCard {
+    gap: 1.5rem;
+    margin-bottom: 40px;
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+    }
+    &Container {
+      width: 300px;
+      height: 14rem;
+      border-radius: 30px;
+      gap: 0.8rem;
+    }
+    &ContainerProfile {
+      gap: 0.8rem;
+    }
+  }
+  .profileImageWrapper {
+    width: 50px;
+    height: 50px;
+    margin-left: 1.5rem;
+  }
+  .profileName {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1699px) {
+  .testimonialCard {
+    gap: 1.5rem;
+    margin-bottom: 40px;
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+    }
+    &Container {
+      width: 400px;
+      height: 14rem;
+      border-radius: 30px;
+      gap: 0.8rem;
+    }
+    &ContainerProfile {
+      gap: 0.8rem;
+    }
+  }
+  .profileImageWrapper {
+    width: 50px;
+    height: 50px;
+    margin-left: 1.5rem;
+  }
+  .profileName {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1198px) {
+  .testimonialCard {
+    gap: 1rem;
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    &Container {
+      width: 90vw;
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  .testimonialCard {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+    &Container {
+      width: 75vw;
+      padding: 0;
+      border-radius: 15px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .testimonialCard {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    &Container {
+      height: 35vh;
+      width: 65vw;
+      // padding: 0 15px 0 15px;
+    }
+  }
+  .testimonialCardContainerProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .testimonialCardContainer p {
+    padding-top: -20px;
+  }
+
+  .profileImageWrapper {
+    width: 46px;
+    height: 52px;
+    margin-top: -1.5rem;
+  }
+  .profileName {
+    font-size: 0.8rem;
+  }
+}

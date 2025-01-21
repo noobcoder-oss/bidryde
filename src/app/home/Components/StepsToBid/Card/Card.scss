@@ -1,0 +1,360 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #d4e9ff;
+  border-radius: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  aspect-ratio: 1;
+  /* Ensures a square card by default */
+
+  &.card-1,
+  &.card-2,
+  &.card-3,
+  &.card-4 {
+    width: 17vw;
+    /* Set the width for all cards */
+    margin-left: 50px;
+    /* Default margin */
+  }
+
+  &.card-2,
+  &.card-4 {
+    margin-right: 130px;
+    /* Overwrites margin for these cards */
+  }
+
+  &Container {
+    width: 100%;
+    padding: 2rem 3rem;
+
+    img {
+      object-fit: contain;
+    }
+  }
+  h6 {
+    color: #2B3970;
+  }
+
+  .digit-1,
+  .digit-2,
+  .digit-3,
+  .digit-4 {
+    color: #276EBC;
+    margin-top: 30px;
+  }
+
+  .digit-1 {
+    font-size: 8rem;
+  }
+
+  .digit-2 {
+    font-size: 9rem;
+    margin: -35px;
+  }
+
+  .digit-3 {
+    font-size: 10rem;
+    margin: -5px;
+  }
+
+  .digit-4 {
+    font-size: 11rem;
+    margin: -60px;
+    margin-top: 70px;
+  }
+}
+
+.cardImage-1,
+.cardImage-2,
+.cardImage-3,
+.cardImage-4 {
+  height: 100% !important;
+  width: 10rem;
+  padding-top: 50px;
+}
+
+.cardImage-4 {
+  width: 13rem;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.leftShadow {
+  box-shadow: -20px 0 3px 0px #bedeff;
+  text-align: right;
+}
+
+.rightShadow {
+  box-shadow: 20px 0 3px 0px #bedeff;
+  text-align: left;
+}
+
+.translateLeft {
+  transform: translateX(-40%);
+}
+
+.translateRight {
+  transform: translateX(40%);
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .card {
+    display: flex;
+    align-items: center;
+    background-color: #d4e9ff;
+    border-radius: 40px;
+    font-family: "Archivo", sans-serif;
+    font-size: 1.09375rem; // Reduce font size by 30%
+    line-height: 17.5px; // Reduce line height by 30%
+    letter-spacing: 0.014em; // Reduce letter-spacing by 30%
+    text-align: left;
+    aspect-ratio: 1;
+    margin-top: 70px;
+
+    &.card-1,
+    &.card-2,
+    &.card-3,
+    &.card-4 {
+      width: 16.9vw; // Reduce width by 30%
+      margin-left: 35px; // Reduce left margin by 30%
+    }
+
+    &.card-2,
+    &.card-4 {
+      width: 16.9vw;
+      margin-right: -100px; 
+      margin-bottom: -30px;
+    }
+
+    &Container {
+      width: 100%;
+      padding: 1.4rem 2.1rem; // Reduce padding by 30%
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    h6 {
+      color: #2B3970;
+    }
+
+    .digit-1,
+    .digit-2,
+    .digit-3,
+    .digit-4 {
+      color: #276EBC;
+      margin-top: 21px; // Reduce margin-top by 30%
+    }
+
+    .digit-1 {
+      font-size: 5.6rem; // Reduce font size by 30%
+    }
+
+    .digit-2 {
+      font-size: 6.3rem; // Reduce font size by 30%
+      margin: -24px; // Adjust margin accordingly
+    }
+
+    .digit-3 {
+      font-size: 7rem; // Reduce font size by 30%
+      margin: -3px;
+    }
+
+    .digit-4 {
+      font-size: 7.7rem; // Reduce font size by 30%
+      margin: -42px; // Adjust margin accordingly
+      margin-top: 49px; // Adjust margin-top accordingly
+    }
+  }
+
+  .cardImage-1,
+  .cardImage-2,
+  .cardImage-3,
+  .cardImage-4 {
+    height: 100% !important;
+    width: 7rem; // Reduce width by 30%
+    padding-top: 35px; // Reduce padding-top by 30%
+  }
+
+  .cardImage-4 {
+    width: 9.1rem; // Reduce width by 30%
+    margin-right: 70px; // Reduce right margin by 30%
+    margin-top: 14px; // Adjust top margin accordingly
+  }
+
+  .leftShadow {
+    box-shadow: -14px 0 3px 0px #bedeff;
+    text-align: right;
+  }
+
+  .rightShadow {
+    box-shadow: 14px 0 3px 0px #bedeff;
+    text-align: left;
+  }
+
+  .translateLeft {
+    transform: translateX(-28%); // Reduce translation by 30%
+  }
+
+  .translateRight {
+    transform: translateX(28%); // Reduce translation by 30%
+  }
+}
+
+
+@media (min-width: 1400px) and (max-width: 1550px) {
+
+  .card {
+    display: flex;
+    align-items: center;
+    background-color: #d4e9ff;
+    border-radius: 40px;
+    font-family: "Archivo", sans-serif;
+    font-size: 1.09375rem; // Reduce font size by 30%
+    line-height: 17.5px; // Reduce line height by 30%
+    letter-spacing: 0.014em; // Reduce letter-spacing by 30%
+    text-align: left;
+    aspect-ratio: 1;
+    margin-top: 70px;
+
+    &.card-1,
+    &.card-2,
+    &.card-3,
+    &.card-4 {
+      width: 17.9vw;
+      margin-left: -1%;
+      margin-top: -5%;
+      margin-bottom: 15%;
+  }
+
+    &.card-2,
+    &.card-4 {
+      width: 16.9vw;
+      margin-right: -10px;
+      margin-top: -20%;
+    }
+
+    &Container {
+      width: 100%;
+      padding: 1.4rem 2.1rem; // Reduce padding by 30%
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    h6 {
+      color: #2B3970;
+    }
+
+    .digit-1,
+    .digit-2,
+    .digit-3,
+    .digit-4 {
+      color: #276EBC;
+      margin-top: 21px; // Reduce margin-top by 30%
+    }
+
+    .digit-1 {
+      font-size: 5.6rem; // Reduce font size by 30%
+    }
+
+    .digit-2 {
+      font-size: 6.3rem; // Reduce font size by 30%
+      margin: -24px; // Adjust margin accordingly
+    }
+
+    .digit-3 {
+      font-size: 7rem; // Reduce font size by 30%
+      margin: -3px;
+    }
+
+    .digit-4 {
+      font-size: 7.7rem; // Reduce font size by 30%
+      margin: -42px; // Adjust margin accordingly
+      margin-top: 49px; // Adjust margin-top accordingly
+    }
+  }
+
+  .cardImage-1,
+  .cardImage-2,
+  .cardImage-3,
+  .cardImage-4 {
+    height: 100% !important;
+    width: 7rem; // Reduce width by 30%
+    padding-top: 35px; // Reduce padding-top by 30%
+  }
+
+  .cardImage-4 {
+    width: 9.1rem; // Reduce width by 30%
+    margin-right: 70px; // Reduce right margin by 30%
+    margin-top: 14px; // Adjust top margin accordingly
+  }
+
+  .leftShadow {
+    box-shadow: -14px 0 3px 0px #bedeff;
+    text-align: right;
+  }
+
+  .rightShadow {
+    box-shadow: 14px 0 3px 0px #bedeff;
+    text-align: left;
+  }
+
+  .translateLeft {
+    transform: translateX(-28%); // Reduce translation by 30%
+  }
+
+  .translateRight {
+    transform: translateX(28%); // Reduce translation by 30%
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .card {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    border-radius: 20px;
+    aspect-ratio: 1;
+    /* Maintain square aspect ratio */
+
+    &Container {
+      width: 100%;
+      padding: 0;
+
+      img {
+        height: 80% !important;
+        width: 5rem;
+        margin: 0.5rem;
+        object-fit: contain;
+      }
+
+      h6 {
+        margin: 10px;
+      }
+    }
+  }
+
+  .translateLeft {
+    transform: translateX(-20%);
+  }
+
+  .translateRight {
+    transform: translateX(20%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 50vw;
+    aspect-ratio: 1;
+    /* Keep proportional dimensions */
+  }
+}

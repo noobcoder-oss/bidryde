@@ -1,0 +1,73 @@
+.contactUsLayout {
+  // width: 100vw;
+  overflow-x: hidden;
+}
+.contactIntro {
+  display: flex;
+  justify-content: center;
+}
+.locationSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.locationIcon {
+  flex: 1;
+  position: relative;
+  margin-bottom: 40px;
+}
+.locationIcon img {
+  width: 120px;
+  height: 117px;
+}
+.bgColor {
+  background-color: #d4e9ff;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 70px;
+  bottom: 40%;
+}
+.cardSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .locationIcon img {
+    width: 93px;
+    height: 91px;
+  }
+  .bgColor {
+    display: none;
+  }
+  .cardSection {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bgColor {
+    display: none;
+  }
+  .cardSection {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+
+    margin-left: 50%;
+    margin-right: 50%;
+    justify-content: space-between;
+  }
+}

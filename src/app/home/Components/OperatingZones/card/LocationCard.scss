@@ -1,0 +1,106 @@
+.locationCard {
+  min-width: 15rem;
+
+  &Container {
+    width: 106%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    border-radius: 9px;
+
+    img {
+      border-radius: 99px;
+      padding: 1rem;
+      height: 100% !important;
+      width: 10rem;
+      margin-bottom: 10px;
+      object-fit: contain;
+    }
+
+  }
+  .locationCardContainer{
+    .avaliableStyle{
+      color: white;
+    }
+    .comingSoonStyle{
+      color: black;
+      font-weight: 500;
+    }
+  }
+ 
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .locationCard {
+    min-width: 12rem; // Reduce min-width proportionally (approx. 20% smaller)
+
+    &Container {
+      width: 100%; // Adjust width for better fit
+      padding: 0.8rem; // Reduce padding slightly
+      box-shadow: 0px 0px 8px 0px #0000001A; // Slightly reduce shadow size
+
+      img {
+        width: 8rem; // Scale down image width
+        padding: 0.8rem; // Adjust padding
+        margin-bottom: 8px; // Reduce margin-bottom
+      }
+    }
+
+    .locationCardContainer {
+      .avaliableStyle {
+        color: white;
+        font-size: 0.95rem; // Optionally adjust text size for better alignment
+      }
+
+      .comingSoonStyle {
+        color: black;
+        font-weight: 500;
+        font-size: 0.95rem; // Reduce font size slightly
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 968px) {
+  .locationCard {
+    min-width: 10rem;
+  
+    &Container {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0px 0px 10px 0px #0000001A;
+      border-radius: 9px;
+      margin: 5px auto;
+      img {
+        border-radius: 99px;
+        padding: 1rem;
+        height: 100% !important;
+        width: 5rem;
+        object-fit: contain;
+      }
+  
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .locationCard{
+    min-width: 10rem;
+  }
+}

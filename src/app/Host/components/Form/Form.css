@@ -1,0 +1,86 @@
+.hformDiv{
+    background-color: #F6F1F1;
+    border-radius: 20px;
+    padding: 10%;
+}
+
+.hForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.hForm label{
+    margin: 5% 0;
+    font-family: Archivo;
+}
+
+.hinput{
+    width: 100%;
+    padding: 3%;
+    margin: 1% 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.hFormHeading{
+    font-family: Archivo Black;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 2%;
+}
+
+.hForm{
+    width: 100%;
+    padding: 3%;
+    margin: 1% 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.hForm button{
+    padding: 3%;
+    background-color: #276EBC;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hForm button:hover{
+    transform: scale(1.01);
+}
+
+@media only screen and (max-width: 768px){
+    .hFormHeading{
+        color: black;
+        font-family: Archivo;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: 0.36px;
+
+    }
+    .hformDiv{
+        width: 120%;
+        margin-left: -9%;
+        background-color: #F6F1F1;
+        border-radius: 20px;
+       
+       
+    }
+    .hForm{
+        width: 100%;
+        padding: 2%;
+        margin: 1% 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+    }
+}

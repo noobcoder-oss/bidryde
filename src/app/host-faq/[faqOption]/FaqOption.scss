@@ -1,0 +1,85 @@
+.faqOption {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100wv;
+  align-items: center;
+
+  &Container {
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    // gap: 2rem;
+
+    &Questions {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+.faqHeading {
+  display: flex;
+  align-items: center; /* Align FAQ's > with the title vertically */
+  gap: 8px; /* Add space between the breadcrumb and title */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  font-size: 50px;
+  color: #000000; /* Link color for FAQ's > */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pageTitle {
+  font-size: 50px;
+  color: #808080; /* Gray color for the title */
+}
+
+.colored_Item {
+  border-radius: 6px;
+}
+
+.coloredem {
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+  .faqOption {
+    &Container {
+      width: 85%;
+
+      &Questions {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .faqHeading {
+    font-size: 24px;
+
+    .breadcrumb {
+      font-size: 24px;
+    }
+
+    .pageTitle {
+      font-size: 24px;
+    }
+
+    .faqOption {
+      &Container {
+        width: 90%;
+
+        &Questions {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

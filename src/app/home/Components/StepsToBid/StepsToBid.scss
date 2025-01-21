@@ -1,0 +1,220 @@
+.stepsToBid {
+  //margin-top: 20rem;
+  width: 100vw;
+  height: 1700px;
+  display: flex;
+  justify-content: center;
+
+  &Container {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .SectionTitle {
+      margin-right: 10%;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      color: Black;
+      max-width: fit-content;
+      text-align: center;
+
+      h1 {
+        font-family: "Archivo Black";
+        font-size: xx-large;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+      }
+    }
+
+    .stepsToBidAnimation {
+      width: 100%;
+      height: 1800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 2rem;
+      margin-top: -5rem;
+      margin-bottom: -200px;
+
+      svg {
+        width: 100%;
+        height: 75%;
+      }
+    }
+
+    .stepsToBidCardContainer {
+      //  margin-top: 3rem;
+      position: absolute;
+      top: 10%;
+      left: 15%;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+      aspect-ratio: 1;
+    }
+
+    .cardcontainer {
+      display: flex;
+      width: 65vw;
+    }
+
+    .rightAlign {
+      flex-direction: row-reverse;
+    }
+
+    .svgPath {
+      width: 60%;
+      height: 70%;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .stepsToBid {
+    width: 70vw; // Reduce width by 30%
+    height: 1330px; // Reduce height by 30%
+    display: flex;
+    justify-content: center;
+
+    &Container {
+      width: 63%; // Reduce container width by 30%
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: 200px;
+
+      .SectionTitle {
+        margin-right: 10.5%; // Reduce right margin by 30%
+        margin-left: -25%;
+        display: flex;
+        flex-direction: column;
+        color: Black;
+        max-width: fit-content;
+
+        h1 {
+          font-size: 2.19rem;
+          margin-left: -30%;
+        }
+
+        p {
+          font-size: 0.96rem; // Reduce font size by 30%
+        }
+      }
+
+      .stepsToBidAnimation {
+        width: 100%;
+        height: 1260px; // Reduce height by 30%
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-left: 1.4rem; // Reduce left margin by 30%
+        margin-top: 3.5rem; // Reduce top margin by 30%
+        margin-bottom: -140px;
+
+        svg {
+          width: 100%;
+          height: 85%;
+          margin-right: -50%;
+        }
+      }
+
+      .stepsToBidCardContainer {
+        top: 7%; // Adjust top position
+        left: 10.5%; // Adjust left position
+        gap: 1.4rem; // Reduce gap by 30%
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        aspect-ratio: 1;
+      }
+
+      .cardcontainer {
+        display: flex;
+        width: 45.5vw; // Reduce width by 30%
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1550px) {
+  .stepsToBid {
+    width: 70vw; // Reduce width by 30%
+    height: 1300px; // Reduce height by 30%
+    display: flex;
+    justify-content: center;
+
+    &Container {
+      width: 63%; // Reduce container width by 30%
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: 200px;
+
+      .SectionTitle {
+        margin-right: 10.5%; // Reduce right margin by 30%
+        margin-left: -25%;
+        display: flex;
+        flex-direction: column;
+        color: Black;
+        max-width: fit-content;
+
+        h1 {
+          font-size: 3rem;
+          //  margin-left: -30%;
+        }
+
+        p {
+          font-size: 1.2rem; // Reduce font size by 30%
+        }
+      }
+
+      .stepsToBidAnimation {
+        width: 100%;
+        height: 1260px; // Reduce height by 30%
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-left: 1.4rem; // Reduce left margin by 30%
+        margin-top: 2.2rem; // Reduce top margin by 30%
+        margin-bottom: -140px;
+
+        svg {
+          width: 100%;
+          height: 85%;
+          margin-right: -50%;
+        }
+      }
+
+      .stepsToBidCardContainer {
+        top: 14%; // Adjust top position
+        left: 10.5%; // Adjust left position
+        gap: 1.4rem; // Reduce gap by 30%
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        aspect-ratio: 1;
+      }
+
+      .cardcontainer {
+        display: flex;
+        width: 55.5vw; // Reduce width by 30%
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .SectionTitle h1 {
+    font-size: xx-large;
+  }
+
+  .SectionTitle p {
+    font-size: 0.8rem;
+  }
+}

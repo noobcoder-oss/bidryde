@@ -1,0 +1,18 @@
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.divider .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  background-color: var(--circle-color, #276EBC);  /* This will fallback to the default if not set */
+}
+
+.divider .line {
+  width: 100%;
+  background-color: var(--line-color, #276EBC);  /* This will fallback to the default if not set */
+  height: 4px;
+}

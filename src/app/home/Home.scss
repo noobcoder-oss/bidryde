@@ -1,0 +1,86 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.rdrDateDisplayWrapper{
+  display: none;
+}
+/* Hide the month portion */
+.rdrMonthPicker {
+  display: none;
+}
+
+/* Ensure the year picker is still visible */
+.rdrYearPicker {
+  display: block;
+}
+
+.rdrMonthAndYearPickers select {
+  pointer-events: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* -webkit-appearance: none; */
+  border: none;
+  background: transparent;
+  padding: 10px 30px 10px 10px;
+  border-radius: 4px;
+  outline: 0;
+  color: #276EBC;
+  font-family: "archivo";
+  font-size: 1.3rem;
+  font-weight: 500;
+  background:none;
+}
+
+.rdrMonthAndYearPickers select:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.rdrNextPrevButton {
+  background: #ffffff;
+}
+
+.rdrNextPrevButton:hover {
+  background: #999a9c;
+}
+.rdrMonthName {
+ 
+  color: #ffffff!important;
+ 
+}
+
+
+.rdrNextButton i {
+  margin: 0 0 0 10px; /* Adjusted margin for spacing */
+  border-width: 6px 6px 6px 10px; /* Increased border width for larger size */
+  border-color: transparent transparent transparent #276EBC; /* Arrow color */
+  transform: translate(5px, 0px); /* Adjusted for alignment */
+}
+
+.rdrPprevButton i {
+  border-width: 6px 10px 6px 6px; /* Increased border width for larger size */
+  border-color: transparent #276EBC transparent transparent; /* Arrow color */
+  transform: translate(-5px, 0px); /* Adjusted for alignment */
+}
+
+.rdrMonthName {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  font-weight: 600; /* Keeps the font bold */
+  color: #ffffff; /* Sets the text color */
+  padding: 0 20px; /* Adds horizontal padding */
+  background-color: #276EBC; /* Sets the background color */
+  height: 38px; /* Sets a fixed height */
+  border-radius: 6.2px; /* Rounds the corners */
+  width: fit-content; /* Shrinks width to fit the content */
+  margin: auto; /* Ensures it's centered in its parent (if applicable) */
+}
+
+
+.rc-slider-track{
+
+  background-color: #276EBC;
+}

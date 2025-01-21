@@ -1,0 +1,79 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1%;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.locationMainContainer {
+  width: 20%;
+  cursor: pointer;
+}
+
+.locationOptionsContainer {
+  position: absolute;
+ 
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px #cfcfcf;
+  border-radius: 10px;
+  padding: 1%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.timeMainContainer {
+  width: 40%;
+  cursor: pointer;
+}
+
+.timingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ModalButtonContainer {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 650px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 5% 0;
+  }
+
+  .locationMainContainer {
+    width: 90%;
+    margin: 2% 0;
+  }
+
+  .locationOptionsContainer {
+
+    width: 90%;
+  }
+  .timeMainContainer {
+    width: 90%;
+    margin: 2% 0;
+  }
+
+  .ModalButtonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10%;
+  }
+}

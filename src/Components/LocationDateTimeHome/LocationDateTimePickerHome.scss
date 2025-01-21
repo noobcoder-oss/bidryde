@@ -1,0 +1,122 @@
+.homeMainContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  padding: 1%;
+  border-radius: 10px;
+  align-items: center;
+
+  .homeLocationDateContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .homeLocationMainContainer {
+      width: 100%;
+      cursor: pointer;
+    }
+    .honeTimeMainContainer {
+      width: 100%;
+    }
+  }
+}
+.selectCity {
+  width: 540px;
+}
+
+.homeLocationOptionsContainer {
+  position: absolute;
+
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px #cfcfcf;
+  border-radius: 35px;
+  padding: 1%;
+  width: 37.44rem;
+  height: 22.06rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// .timeMainContainer {
+//   width: 100%;
+// }
+
+.homeTimingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+// .HomeLocationDateContainer {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+// }
+
+.homeModalButtonContainer {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rdrMonthAndYearWrapper {
+  margin-bottom: 25px;
+}
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #276ebc; /* Blue */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite; /* Rotates infinitely */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homeMainContainer {
+    flex-direction: column;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 5% 0;
+  }
+
+  .homeLocationMainContainer {
+    width: 90%;
+    margin: 2% 0;
+  }
+
+  .homeLocationOptionsContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .homeTimeMainContainer {
+    width: 90%;
+    margin: 2% 0;
+  }
+
+  .homeModalButtonContainer {
+    flex-direction: row; /* Keep buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    gap: 1rem; /* Add spacing between buttons */
+    margin-top: 10%; /* Retain margin */
+  }
+}

@@ -1,0 +1,81 @@
+// InfoCard.scss
+.infoCardHome {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 12px;
+
+  .titleContainerHome {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .miniContainerHome {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+
+      .iconContainerHome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 8px;
+      }
+
+      .titleHome {
+        font-family: "Archivo", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 80px;
+      }
+    }
+    .maskedColorHome {
+      color: #000000;
+    }
+
+    .descriptionHome {
+      font-family: "Archivo", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      line-height: 15px;
+
+      letter-spacing: 0em;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .infoCardHome {
+    .titleContainerHome {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      /* Apply conditionally when miniContainerHome is 'Date and Time' */
+      &.hideDescription {
+        .descriptionHome {
+          display: none;
+        }
+      }
+
+      .descriptionHome {
+        font-family: "Archivo", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}

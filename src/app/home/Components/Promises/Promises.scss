@@ -1,0 +1,285 @@
+.PromisesAndCommitments {
+  margin-top: 5rem;
+  width: 100vw;
+  max-width: 100vw;
+  justify-content: center;
+  background-color: #276ebc;
+
+  &Container {
+    width: 100%;
+    display: flex;
+    padding: 2rem 3rem 4rem 4rem;
+    height: 100%;
+    gap: 2rem;
+
+    .scrollControllers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      button {
+        padding: 0.5rem;
+        color: white;
+        border: 4px solid white;
+        border-radius: 99px;
+      }
+    }
+
+    &Right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      overflow: hidden;
+
+      .SectionTitle {
+        color: white;
+        max-width: fit-content;
+        text-align: start;
+
+        h1 {
+          //margin-bottom: 0.4rem;
+          font-size: 3.125rem;
+          font-family: "Archivo Black";
+        }
+        p {
+          font-weight: 300;
+          font-size: 1.3rem;
+        }
+      }
+
+      .CardSection {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        max-width: 100%;
+        overflow: auto;
+      }
+    }
+
+    &Top {
+      color: white;
+    }
+  }
+  .swiper {
+    margin-left: 60px;
+    margin-right: 40px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+  }
+  .scrollControllers {
+    padding-top: 75px;
+    margin-left: 3.25rem;
+    margin-right: 3rem;
+  }
+  .SectionTitle {
+  }
+}
+
+.CardSection {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.CardSection::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.SectionTitle {
+  margin-left: -65%;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .PromisesAndCommitments {
+    margin-top: 3.5rem; // Reduce margin by 30%
+    width: 100vw;
+    max-width: 100vw;
+    justify-content: center;
+    background-color: #276ebc;
+
+    &Container {
+      width: 100%;
+      display: flex;
+      padding: 1.4rem 2.1rem 2.8rem 2.8rem; // Reduce padding by 30%
+      height: 100%;
+      gap: 1.4rem; // Reduce gap by 30%
+
+      .scrollControllers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem; // Reduce gap by 30%
+
+        button {
+          padding: 0.35rem; // Reduce padding by 30%
+          color: white;
+          border: 4px solid white;
+          border-radius: 99px;
+        }
+      }
+
+      &Right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4rem; // Reduce gap by 30%
+        overflow: hidden;
+
+        .SectionTitle {
+          color: white;
+          max-width: fit-content;
+          text-align: start;
+          margin-left: -62.5% !important;
+
+          h1 {
+            font-size: 2.19rem; // Reduce font size by 30%
+            font-family: "Archivo Black";
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 0.91rem; // Reduce font size by 30%
+          }
+        }
+
+        .CardSection {
+          display: flex;
+          gap: 1.4rem; // Reduce gap by 30%
+          justify-content: center;
+          max-width: 100%;
+          overflow: auto;
+        }
+      }
+
+      &Top {
+        color: white;
+      }
+    }
+
+    .swiper {
+      margin-left: 42px; // Reduce left margin by 30%
+      margin-right: 28px; // Reduce right margin by 30%
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      display: block;
+    }
+    .scrollControllers {
+      padding-top: 52.5px; // Reduce padding-top by 30%
+      margin-left: 2.28rem; // Reduce left margin by 30%
+      margin-right: 2.1rem; // Reduce right margin by 30%
+    }
+
+    .SectionTitle {
+      // Reduce margin-left by 30%
+    }
+  }
+
+  .CardSection {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .CardSection::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .PromisesAndCommitments {
+    margin-top: 5rem;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: white;
+
+    &Container {
+      width: 100%;
+      display: flex;
+      padding: 1rem 1rem 1rem 1rem;
+      height: 80%;
+      gap: 2rem;
+      background-color: white;
+
+      .scrollControllers {
+        display: none;
+
+        button {
+          padding: 0.5rem;
+          color: white;
+          border: 2px solid white;
+          border-radius: 99px;
+        }
+      }
+
+      &Right {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        overflow: hidden;
+
+        .SectionTitle {
+          color: black;
+          max-width: fit-content;
+          margin: 10px auto;
+          text-align: center;
+
+          h1 {
+            // margin-bottom: rem;
+            font-family: "Archivo", sans-serif;
+            font-size: xx-large;
+          }
+
+          p {
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+          }
+        }
+
+        .CardSection {
+          display: flex;
+          gap: 2rem;
+          max-width: 100%;
+          overflow: auto;
+        }
+      }
+
+      &Top {
+        color: white;
+      }
+    }
+  }
+
+  // ColorCarousel.module.scss
+
+  .dot-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    background-color: white;
+
+    .dot {
+      width: 8px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background-color: #276ebc;
+        width: 50px;
+
+        border-radius: 30px;
+      }
+    }
+  }
+}

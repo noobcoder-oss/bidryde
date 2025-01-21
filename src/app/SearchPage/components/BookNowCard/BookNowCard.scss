@@ -1,0 +1,78 @@
+.BookNowCardMainContainer {
+  width: 50vw;
+  height: 50vh;
+  background-image: url("../../../../assets/images/SearchPage/BookNowCardBackGroundImage.png");
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 1px #202020;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  &_closeButton {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  .titleStyling {
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: Archivo;
+  }
+
+  &_Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    img {
+      width: 12rem;
+      height: 70px;
+      object-fit: contain;
+    }
+  }
+  .OfferTextStyling {
+    color: #fff;
+    font-size: 2rem;
+    font-family: Archivo;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .BookNowCardMainContainer {
+    width: 90vw;
+    height: 300px;
+    gap: 5px;
+
+    .titleStyling {
+      color: #fff;
+      font-size: 2rem;
+      font-family: Archivo;
+    }
+
+    &_Buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+
+      img {
+        width: 8rem;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+    .OfferTextStyling {
+      color: #fff;
+      font-size: 1rem;
+      font-family: Archivo;
+    }
+  }
+}

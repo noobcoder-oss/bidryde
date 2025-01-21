@@ -1,0 +1,18 @@
+.divider1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .circle1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background-color: #ffffff;
+  }
+  
+  .line1 {
+    width: 100%;
+    background-color: #ffffff;
+    height: 4px;
+  }
+}

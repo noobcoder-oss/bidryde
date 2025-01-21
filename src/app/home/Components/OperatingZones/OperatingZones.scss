@@ -1,0 +1,324 @@
+.operatingZones {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 100%;
+
+  &Container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .SectionTitle {
+      margin-right: 13.5%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: Black;
+      max-width: fit-content;
+
+      h1 {
+        font-family: "Archivo Black";
+        font-size: 3.125rem;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-size: 1.375rem;
+      }
+    }
+
+    &Content {
+      margin-top: 5rem;
+      position: relative;
+      width: 100%;
+      object-fit: contain;
+      display: flex;
+      // height: 60vh;
+
+      &BG {
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+          width: 1920px;
+          height: 98px;
+        }
+      }
+      &Location {
+        z-index: 99;
+        position: absolute;
+        bottom: 19%;
+        right: 64.5%;
+        img {
+          object-fit: contain;
+          width: 50%;
+        }
+      }
+
+      &Cards {
+        margin-right: 27.5%;
+        width: 100%;
+        display: flex;
+        gap: 2%;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.card__2__3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 37%;
+  margin-left: 9.3rem;
+  margin-right: -4.4rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .operatingZones {
+    margin-top: 3.5rem; // Reduce margin-top by 30%
+    width: 100vw;
+    height: 100%;
+
+    &Container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .SectionTitle {
+        margin-right: 10%; // Reduce margin-right by 30%
+        h1 {
+          font-size: 2.19rem; // Reduce font-size by 30%
+        }
+
+        p {
+          font-size: 0.96rem; // Reduce font-size by 30%
+        }
+      }
+
+      &Content {
+        margin-top: 3.5rem; // Reduce margin by 30%
+        position: relative;
+        width: 100%;
+        display: flex;
+
+        &BG {
+          position: absolute;
+          z-index: -2;
+          top: 50%;
+          transform: translateY(-50%);
+          img {
+            width: 1644px; // Reduce width by 30%
+            height: 68.6px; // Reduce height by 30%
+          }
+        }
+
+        &Location {
+          bottom: 13%; // Adjust position proportionally
+          right: 45%; // Adjust position proportionally
+
+          img {
+            object-fit: contain;
+            width: 45%;
+            margin-right: 101px;
+            margin-bottom: 9px;
+          }
+        }
+
+        &Cards {
+          margin-right: 19.25%; // Reduce margin-right by 30%
+          gap: 1.4%; // Adjust gap proportionally
+        }
+      }
+    }
+  }
+
+  .card__2__3 {
+    gap: 26%; // Reduce gap by 30%
+    margin-left: 6.5rem; // Reduce margin-left by 30%
+    margin-right: -3.1rem; // Reduce margin-right proportionally
+  }
+}
+
+@media (min-width: 1399px) and (max-width: 1630px) {
+  .operatingZones {
+    margin-top: 3.5rem; // Reduce margin-top by 30%
+    width: 100vw;
+    height: 100%;
+
+    &Container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .SectionTitle {
+        margin-right: 10%; // Reduce margin-right by 30%
+        h1 {
+          font-size: 2.19rem; // Reduce font-size by 30%
+        }
+
+        p {
+          font-size: 0.96rem; // Reduce font-size by 30%
+        }
+      }
+
+      &Content {
+        margin-top: 3.5rem; // Reduce margin by 30%
+        position: relative;
+        width: 100%;
+        display: flex;
+
+        &BG {
+          position: absolute;
+          z-index: -2;
+          top: 50%;
+          transform: translateY(-50%);
+          img {
+            width: 1644px; // Reduce width by 30%
+            height: 68.6px; // Reduce height by 30%
+          }
+        }
+
+        &Location {
+          bottom: 13%; // Adjust position proportionally
+          margin-left: -70%; // Adjust position proportionally
+
+          img {
+            object-fit: contain;
+            width: 45%;
+            margin-right: 101px;
+            margin-bottom: 9px;
+          }
+        }
+
+        &Cards {
+          margin-right: 19.25%; // Reduce margin-right by 30%
+          gap: 1.4%; // Adjust gap proportionally
+        }
+      }
+    }
+  }
+
+  .card__2__3 {
+    gap: 26%; // Reduce gap by 30%
+    margin-left: 6.5rem; // Reduce margin-left by 30%
+    margin-right: -3.1rem; // Reduce margin-right proportionally
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .operatingZones {
+    margin-top: 5rem;
+    width: 100vw;
+    height: 100%;
+
+    &Container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .SectionTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: Black;
+        max-width: fit-content;
+        text-align: center;
+        margin: 5px auto;
+
+        h1 {
+          font-family: "Archivo", sans-serif;
+          font-size: xx-large;
+        }
+
+        p {
+          margin-bottom: 5px;
+          font-size: 0.8rem;
+        }
+      }
+
+      &Content {
+        margin-top: 5rem;
+        position: relative;
+        width: 100%;
+        object-fit: contain;
+        display: flex;
+        // height: 60vh;
+
+        &BG {
+          display: none;
+          position: absolute;
+          z-index: -2;
+          top: 50%;
+          transform: translateY(-50%);
+
+          img {
+            width: 100%;
+            height: 100% !important;
+            object-fit: contain;
+          }
+        }
+        &Location {
+          z-index: 99;
+          position: absolute;
+          bottom: 60%;
+          left: 39%;
+          right: 11%;
+          img {
+            object-fit: contain;
+            width: 46%;
+            margin: 10px auto;
+          }
+        }
+
+        &Cards {
+          margin-right: 0;
+          width: 100%;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+  .operatingZonesContainerContentCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .card__1 {
+    margin-top: 60px;
+  }
+
+  .card__2__3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .operatingZonesContainerContentLocation {
+    // margin-top: -30px;
+    z-index: 99;
+    position: absolute;
+    // bottom: 55%;
+    left: 37%;
+    right: 11%;
+  }
+}

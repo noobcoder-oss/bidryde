@@ -1,0 +1,46 @@
+.mainLeaseContainer {
+  background-color: #edebeb;
+  .contentContainer {
+    width: 70vw;
+    margin: auto;
+
+    h5 {
+      font-family: Archivo Black;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin: 2% 0;
+    }
+    .introTextContainer {
+      p {
+        font-size: 16px;
+        font-family: Archivo;
+        line-height: 1.2rem;
+        margin: 1% 0;
+        text-align: justify;
+      }
+      h3 {
+        font-size: 18px;
+        font-family: Archivo;
+        color: #276ebc;
+        margin: 1% 0;
+      }
+      ul {
+        margin-left: 40px;
+        font-size: 16px;
+      }
+      .color_18 {
+        color: #276ebc;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .mainContainer {
+    .contentContainer {
+      width: 90vw;
+      margin: auto;
+    }
+  }
+}

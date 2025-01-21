@@ -1,0 +1,331 @@
+.trendingOffers {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  &Container {
+    background: #f6f1f1;
+    width: 90%; // Container width remains the same
+    padding: 3%;
+    margin: 5% auto; // Centered with automatic left and right margins
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centered contents
+    position: relative;
+
+    .SectionTitle {
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      max-width: fit-content;
+
+      h1 {
+       // margin-bottom: 1rem;
+        font-family: "Archivo Black";
+        font-weight: 400;
+        font-size: 3rem;
+      }
+
+      p {
+       // margin-bottom: 1rem;
+        font-family: "Archivo";
+        font-size: 1.2rem;
+        font-weight: 200;
+      }
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: gray;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .dot.active {
+      background-color: blue; /* Active dot color */
+    }
+    
+    .trendingOffersContainerCards {
+      display: flex;
+      justify-content: space-between;
+      gap: 2%; // Use percentage for gap
+      transition: transform 0.3s ease-in-out;
+      margin-left: auto; // Centered cards within the container
+      margin-right: auto;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: grey;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .dot.active {
+      background-color: blue;
+    }
+    
+
+    .trendingCardContainer {
+      width: 45%; // Use percentage for width
+      height: auto; // Allow height to adjust based on content
+      min-height: 150px; // Set a minimum height
+      border-radius: 20px;
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 2%; // Use percentage for padding
+    }
+
+    .offerContent {
+      margin-left: 20px;
+    }
+
+    h3 {
+      font-family: 'Archivo', sans-serif;
+      font-size: 2rem; // Use rem for font size
+      font-weight: 800;
+      text-align: left;
+      margin-bottom: 14px;
+      color: #276EBC; // Optional: Add color to make text visible over background
+    }
+
+    p {
+      font-family: 'Archivo', sans-serif;
+      font-size: 1.25rem; // Use rem for font size
+      font-weight: 100;
+      line-height: 1.5; // Use unitless line height
+      letter-spacing: 0.02em;
+      text-align: left;
+     // margin-bottom: 23px;
+    }
+
+    .customOfferCode {
+      font-family: 'Archivo', sans-serif;
+      font-size: 1.25rem; // Use rem for font size
+      font-weight: 700;
+      line-height: 1.5; // Use unitless line height
+      text-align: center; // Center text horizontally
+      width: auto; // Allow width to adjust
+      padding: 0.5rem; // Use rem for padding
+      background-color: #D4E9FF;
+      border-radius: 5px;
+      margin-bottom: 32px;
+    }
+
+    .customOfferValidity {
+      font-family: 'Archivo', sans-serif;
+      font-size: 1rem; // Use rem for font size
+      font-weight: 100;
+      line-height: 1.5; // Use unitless line height
+      letter-spacing: 0.02em;
+      text-align: left;
+    }
+
+    .offerImage {
+      margin-left: 1rem; // Use rem for margin
+      margin-right: 1rem;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      transform: translateY(-50%);
+
+      button {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 1.5rem; // Use rem for font size
+        padding: 0.5rem; // Use rem for padding
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 0.5rem; // Use rem for margin
+        border-radius: 50%;
+        background-color: #bbb;
+        cursor: pointer;
+
+        &.active {
+          background-color: #276EBC;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .trendingOffers {
+   
+  
+    &Container {
+    
+      .SectionTitle {
+        margin: 14px auto; // Reduce margin by 30%
+
+        h1 {
+          font-size: 2.1rem; // Reduce font-size by 30%
+        }
+
+        p {
+          font-size: 0.84rem; // Reduce font-size by 30%
+        }
+      }
+
+      .carousel {
+        width: 100%;
+      }
+
+      .dot {
+        width: 7px; // Reduce size of dot by 30%
+        height: 7px; // Reduce size of dot by 30%
+        margin: 0 3.5px; // Adjust margin
+      }
+
+      .trendingOffersContainerCards {
+        gap: 1.4%; // Reduce gap by 30%
+      }
+
+      .trendingCardContainer {
+        width: 55.5%; // Reduce width by 30%
+        min-height: 105px; // Reduce min-height by 30%
+        padding: 1.4%; // Reduce padding by 30%
+      }
+
+      h3 {
+        font-size: 1.4rem; // Reduce font-size by 30%
+        //margin-bottom: 9.8px; // Reduce margin by 30%
+      }
+
+      p {
+        font-size: 0.875rem; // Reduce font-size by 30%
+      }
+
+      .customOfferCode {
+        font-size: 0.875rem; // Reduce font-size by 30%
+        padding: 0.35rem; // Reduce padding by 30%
+      }
+
+      .carousel-controls button {
+        font-size: 1.05rem; // Reduce font-size by 30%
+        padding: 0.35rem; // Reduce padding by 30%
+      }
+
+      .dots .dot {
+        width: 7px; // Reduce size of dots by 30%
+        height: 7px; // Reduce size of dots by 30%
+        margin: 0 3.5px; // Adjust margin
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 1400px) and (max-width: 1550px) {
+  .trendingOffers {
+    &Container {
+      .SectionTitle {
+        margin: 18.2px auto; // Increased margin by 30% (14px * 1.3)
+
+        h1 {
+          font-size: 2.73rem; // Increased font-size by 30% (2.1rem * 1.3)
+        }
+
+        p {
+          font-size: 1.092rem; // Increased font-size by 30% (0.84rem * 1.3)
+        }
+      }
+
+      .carousel {
+        width: 100%;
+      }
+
+      .dot {
+        width: 9.1px; // Increased size of dot by 30% (7px * 1.3)
+        height: 9.1px; // Increased size of dot by 30% (7px * 1.3)
+        margin: 0 4.55px; // Adjusted margin (3.5px * 1.3)
+      }
+
+      .trendingOffersContainerCards {
+        gap: 1.82%; // Increased gap by 30% (1.4% * 1.3)
+      }
+
+      .trendingCardContainer {
+        width: 72.15%; // Increased width by 30% (55.5% * 1.3)
+        min-height: 136.5px; // Increased min-height by 30% (105px * 1.3)
+        padding: 1.82%; // Increased padding by 30% (1.4% * 1.3)
+      }
+
+      h3 {
+        font-size: 1.82rem; // Increased font-size by 30% (1.4rem * 1.3)
+        margin-bottom: 12.74px; // Increased margin by 30% (9.8px * 1.3)
+      }
+
+      p {
+        font-size: 1.1375rem; // Increased font-size by 30% (0.875rem * 1.3)
+      }
+
+      .customOfferCode {
+        font-size: 1.1375rem; // Increased font-size by 30% (0.875rem * 1.3)
+        padding: 0.455rem; // Increased padding by 30% (0.35rem * 1.3)
+      }
+
+      .carousel-controls button {
+        font-size: 1.365rem; // Increased font-size by 30% (1.05rem * 1.3)
+        padding: 0.455rem; // Increased padding by 30% (0.35rem * 1.3)
+      }
+
+      .dots .dot {
+        width: 9.1px; // Increased size of dots by 30% (7px * 1.3)
+        height: 9.1px; // Increased size of dots by 30% (7px * 1.3)
+        margin: 0 4.55px; // Adjusted margin (3.5px * 1.3)
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .trendingOffers {
+    display: none;
+  }
+}
