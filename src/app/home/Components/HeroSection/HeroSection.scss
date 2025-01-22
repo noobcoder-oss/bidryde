@@ -1,7 +1,8 @@
 .heroSection {
   background-color: #f0f0f0;
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: 75vh;
   overflow: hidden;
   position: relative;
 }
@@ -108,8 +109,13 @@
 }
 
 @media (max-width: 500px) {
+  .heroSection {
+    background-color: white;
+    // min-height: 100px;
+  }
   .heroSectionContainer {
     width: 100%;
+    height: 580px;
     max-width: none;
     margin: 0;
     padding: 1.5rem;
@@ -132,18 +138,21 @@
     width: 100%;
     color: #ffffff;
     text-align: center;
-    order: 2;
+    order: 1; /* Ensure this is the first section */
 
-    h1 {
+    h1.desk__title {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      // margin-bottom: 0.5rem;
       font-weight: 600;
     }
 
     p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
     }
+  }
+
+  .heroSectionContainer__left-middle {
+    display: none;
   }
 
   /* Car image section - Second */
@@ -151,20 +160,17 @@
     position: relative;
     width: 100%;
     height: auto;
-    order: 1;
+    order: 2; /* Ensure this is the second section */
     margin: 0.5rem 0;
     padding: 1rem;
     border-radius: 15px;
 
     img {
       max-width: 200px;
+      height: 200px;
       margin: 0 auto;
       display: block;
     }
-  }
-
-  .heroSectionContainer__left-middle {
-    display: none;
   }
 
   /* Reserve your ride - Third */
@@ -173,7 +179,7 @@
     background-color: #fff;
     border-radius: 15px;
     padding: 1rem;
-    order: 3;
+    order: 3; /* Ensure this is the third section */
 
     .heading2 {
       display: none;
@@ -186,80 +192,56 @@
     border: none;
     background: transparent;
   }
+}
 
-  /* Location section */
-  .location-section {
+@media (max-width: 500px) {
+  .heroSectionContainer__left-bottom {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    order: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  }
+}
+
+@media (max-width: 500px) {
+  .heroSection {
+    margin-bottom: 20px;
+  }
+  .heroSectionContainer__right img {
+    max-width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heroSectionContainer__right img {
+    max-width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .heroSectionContainer__left-top h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroSectionContainer__left-top p {
+    font-size: 0.8rem;
+  }
+  .heroSectionContainer {
+    width: 100%;
+    height: 660px;
+    max-width: none;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #276ebc;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .location-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #666;
-    font-size: 0.9rem;
-  }
-
-  .location-text {
-    color: #262626;
-    font-size: 0.9rem;
-    padding-left: 1.5rem;
-  }
-
-  /* Time section */
-  .time-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .date-picker {
-    display: none;
-  }
-
-  .time-container {
-    flex: 1;
-  }
-
-  .time-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .time-value {
-    color: #262626;
-    font-size: 0.9rem;
-    padding-left: 1.5rem;
-  }
-
-  /* Get Your Car button */
-  .get-car-button {
-    width: 100%;
-    padding: 1rem;
-    background-color: #276ebc;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    margin-top: 1rem;
-    cursor: pointer;
-  }
-
-  /* Icons */
-  .location-icon,
-  .time-icon {
-    width: 16px;
-    height: 16px;
-    color: #276ebc;
-  }
-  .heroSectionContainer__left-bottom p {
-    font-size: 1rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }

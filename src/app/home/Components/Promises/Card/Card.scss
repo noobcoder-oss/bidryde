@@ -3,8 +3,8 @@
   align-items: center;
   background-color: #d4e9ff;
   border-radius: 20px;
-  max-width: 100%; // 450px to rem
-  min-height: 27.25rem; // 420px to rem
+  max-width: 100%;
+  min-height: 27.25rem;
 
   font-family: "Archivo", sans-serif;
   text-align: left;
@@ -47,6 +47,10 @@
       }
     }
 
+    &__ContentContent {
+      display: none; // Hide on desktop by default
+    }
+
     h3 {
       font-size: 1.3rem;
       font-weight: 600;
@@ -64,18 +68,10 @@
     }
   }
 
-  // Hover effect for content visibility
   .promiseCard:hover .promiseCardContainer__Content {
     opacity: 1;
   }
 
-  // Update container size for screens below 1920px
-  // @media screen and (max-width: 1920px) {
-  //   .promiseCard {
-  //     width: 500px;
-  //     height: 500px;
-  //   }
-  // }
   .promiseCardContainer h3 {
     font-size: 1.875rem;
     font-family: "Archivo";
@@ -321,7 +317,6 @@
 
     &Container {
       width: 100%;
-      // height: auto;
       padding: 0.75rem;
       display: flex;
       flex-direction: column;
@@ -343,6 +338,15 @@
           margin-top: 0.25rem;
           text-align: left;
         }
+      }
+
+      &__ContentContent {
+        display: block; // Show on mobile
+        color: black; // Set text color to black
+        font-size: 0.75rem;
+        line-height: 1.3;
+        margin-top: 0.25rem;
+        text-align: left;
       }
 
       h3 {
@@ -372,13 +376,25 @@
 
       &Right {
         .CardSection {
-          gap: 0.5rem;
+          // gap: 0.5rem;
           padding: 0.2rem;
           overflow-x: auto;
-          margin-right: 2rem;
+          margin-right: 1rem;
           -webkit-overflow-scrolling: touch;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .PromisesAndCommitmentsContainerRight .CardSection {
+    display: flex;
+    gap: 2rem;
+    max-width: 121%;
+    overflow: auto;
+  }
+  .promiseCardContainer__Content p {
+    font-size: 18px;
   }
 }

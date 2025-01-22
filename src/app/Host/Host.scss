@@ -961,127 +961,131 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .step__ {
-    width: 80%;
-  }
-}
-
 @media only screen and (max-width: 750px) {
   .hostIntro {
-    background-color: white;
-  }
-
-  .step__ {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3%;
-    border: 4px solid #276ebc;
-    padding: 20px;
-    border-radius: 80px;
-    // margin-left: 7%;
-    background-color: #276ebc10;
-  }
-
-  .icon__img {
-    width: 50%;
-    height: 80%;
-  }
-
-  .paper__img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .step__2 {
-    margin-left: 25%;
-    margin-top: 8%;
-    width: 80%;
-  }
-
-  .step__3 {
-    margin-top: 8%;
-    width: 68%;
-  }
-
-  .matter__host {
-    font-size: 13px;
-  }
-
-  .steps {
-    margin-top: 15px;
-  }
-
-  .pheaderhost {
-    font-size: 17px;
-    align-items: center;
-  }
-
-  .hostIntro {
+    background-color: #f8f4f4;
+    min-height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
   }
+
   .hostIntroLeft {
     width: 100%;
     align-items: center;
+    margin-bottom: 30px;
   }
+
   .hostIntroHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin: 0;
+    text-align: center;
+    padding: 20px 15px;
   }
 
   .hostIntroHeader .p1 {
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 600;
-    line-height: normal;
-    margin-bottom: 10px;
-  }
-
-  .tagLinesTextStyling.undefined {
-    margin: 9px 48px;
-  }
-
-  .sectionHeaderWrapper.undefined {
-    margin-left: 49%;
-    margin-right: -30%;
+    margin-bottom: 15px;
+    text-align: center;
   }
 
   .hostIntroHeader .p2 {
-    font-family: Krona One;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: "Krona One";
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.3;
   }
+
   .hostIntroIcon img {
     display: none;
   }
 
   .hostIntroRight img {
-    width: 324px;
-    height: 320px;
-    margin: 10px;
+    width: 100%;
+    max-width: 324px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
+  /* Steps Section */
+  .stepsSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .decCircle {
+    display: none;
+  }
+
+  .step__ {
+    width: 85%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #e3f0ff;
+    border: 4px solid #276ebc;
+    padding: 15px 25px;
+    border-radius: 60px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .step__:first-child {
+    align-self: flex-start;
+    // margin-left: 5%;
+  }
+
+  .step__2 {
+    align-self: flex-end;
+    margin-right: 5%;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+
+  .step__3 {
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+
+  .icon__img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .matter__host {
+    font-size: 14px;
+    line-height: 1.4;
+    flex-grow: 1;
+  }
+
+  /* Form Section */
   .hformSection {
     width: 100%;
-    height: fit-content;
+    height: 545px;
     background-color: #2e78ca;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
-    margin-top: 10%;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 40px 0 135px 0;
   }
 
   .hformSectionLeft {
@@ -1089,106 +1093,152 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 0 0 30px 0;
   }
 
   .formSectionHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 20px 0;
     gap: 10px;
   }
 
   .hformSection .p1 {
-    width: fit-content;
     color: #fff;
     font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
+    font-size: 28px;
     font-weight: 600;
-    line-height: normal;
+    text-align: center;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+    width: 100%;
   }
 
   .hformSection .p2 {
     color: #fff;
-
     font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
+    font-size: 16px;
     font-weight: 600;
-    line-height: normal;
+    text-align: center;
+    margin: 0;
   }
 
   .hformSection .form {
-    position: relative;
-    width: 60%;
-    margin-bottom: -20%;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
+  /* Host Section 2 */
   .hostSection2 {
-    margin-top: 131px;
+    margin: 40px 0;
   }
 
   .hostSection2 .hostSection2Header {
-    width: 100%;
-    margin: 36% 20%;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    text-align: center;
   }
 
   .hostCardSection {
     display: grid;
     align-items: center;
-    margin-left: 50%;
-    margin-right: 50%;
     justify-content: center;
-  }
-
-  .hostSectionHeader__ h1 {
-    font-size: xx-large;
-  }
-
-  .hostSectionHeader__ p {
-    font-size: 0.8rem;
-  }
-
-  .stepsSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    padding: 10px;
-    margin-right: 0%;
-    margin-left: -109px;
-  }
-
-  .step__ {
-    width: 78%;
-  }
-
-  .decCircle {
-    display: none;
-  }
-
-  .route {
-    margin-left: 22%;
-    margin-right: 0px;
+    margin: 0;
+    padding: 15px 0 0 20px;
     width: 100%;
   }
 
+  .css-2to0up-MuiGrid-root > .MuiGrid-item {
+    padding-top: 10px;
+    padding-left: 55px;
+  }
+
+  /* Headers */
+  .hostSectionHeader__,
   .hostSectionHeader {
-    margin: 4% -5%;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
   }
 
+  .hostSectionHeader__ h1,
   .hostSectionHeader h1 {
-    font-size: xx-large;
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-family: "Archivo Black";
   }
 
+  .hostSectionHeader__ p,
   .hostSectionHeader p {
-    font-size: small;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  .paper__img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hostIntroHeader .p1 {
+    font-size: 20px;
+  }
+
+  .hostIntroHeader .p2 {
+    font-size: 28px;
+  }
+
+  .step__ {
+    width: 90%;
+    padding: 12px 20px;
+  }
+
+  .step__:first-child {
+    margin-left: 2%;
+  }
+
+  .step__2 {
+    margin-right: 2%;
+  }
+
+  .step__3 {
+    margin-left: 2%;
+  }
+
+  .icon__img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .matter__host {
+    font-size: 13px;
+  }
+
+  .hformSection .p1 {
+    font-size: 24px;
+  }
+
+  .hformSection .p2 {
+    font-size: 14px;
+  }
+
+  .hostSectionHeader__ h1,
+  .hostSectionHeader h1 {
+    font-size: 24px;
+  }
+
+  .hostSectionHeader__ p,
+  .hostSectionHeader p {
+    font-size: 14px;
   }
 
   .formSectionHeader {
-    margin-bottom: 6%;
+    margin-bottom: 15px;
   }
 }

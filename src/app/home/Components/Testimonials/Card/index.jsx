@@ -25,23 +25,12 @@ const Card = ({ data }) => {
 
       <div className="testimonialCardContainer" style={{ paddingTop: "60px" }}>
         {/* Add spacing after content */}
-        <p className="p-2" style={{ marginBottom: "3rem" }}>
-          {data.content}
-        </p>
+        <p className="p-2">{data.content}</p>
 
         {/* Profile Section with Image and Name */}
         <div className="testimonialCardContainerProfile">
           <div className="profileImageWrapper">
-            <Image
-              src={data.avatar}
-              alt="avatar"
-              width={60.2}
-              height={64.21}
-              style={{
-                borderRadius: "50%",
-                objectFit: "cover",
-              }}
-            />
+            <Image src={data.avatar} alt="avatar" />
             <h5 className="profileName">{data.name}</h5>
           </div>
         </div>

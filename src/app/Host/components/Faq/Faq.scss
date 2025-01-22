@@ -7,7 +7,7 @@
   &Container {
     padding: 0.5rem;
     width: 82%;
-    background-color: #F6F1F1;
+    background-color: #f6f1f1;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
       h1 {
         margin-bottom: 1rem;
         letter-spacing: 2px;
-        font-family: 'Archivo Black', sans-serif;
+        font-family: "Archivo Black", sans-serif;
       }
 
       p {
@@ -49,14 +49,14 @@
         gap: 10px;
         align-items: center;
         border-radius: 16px;
-      
+
         img {
           width: 1.5rem;
           height: 1.5rem;
           object-fit: contain;
         }
       }
-      
+
       .faqChip.active {
         background-color: #fff;
         border: none;
@@ -73,19 +73,18 @@
   }
 }
 
-
-.btn__FAQ{
+.btn__FAQ {
   background-color: #ffffff;
-  color: #276EBC;
+  color: #276ebc;
   margin: 2rem 1rem;
   padding: 10px 30px;
   font-size: 1rem;
-  border: 1px solid #276EBC;
+  border: 1px solid #276ebc;
   width: 15%;
   border-radius: 5px;
 }
 
-.btn__FAQ:hover{
+.btn__FAQ:hover {
   background-color: #ffffff90;
   cursor: pointer;
 }
@@ -96,13 +95,12 @@
     border-radius: 10px;
   }
 
-  .faq{
+  .faq {
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  
-  
-  
+  .faqContainer {
+    width: 88%;
+  }
 }
-

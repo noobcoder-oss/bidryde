@@ -24,14 +24,14 @@
       max-width: fit-content;
 
       h1 {
-       // margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         font-family: "Archivo Black";
         font-weight: 400;
         font-size: 3rem;
       }
 
       p {
-       // margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         font-family: "Archivo";
         font-size: 1.2rem;
         font-weight: 200;
@@ -52,11 +52,11 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-    
+
     .dot.active {
       background-color: blue; /* Active dot color */
     }
-    
+
     .trendingOffersContainerCards {
       display: flex;
       justify-content: space-between;
@@ -71,7 +71,7 @@
       justify-content: center;
       margin-top: 10px;
     }
-    
+
     .dot {
       width: 10px;
       height: 10px;
@@ -81,11 +81,10 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    
+
     .dot.active {
       background-color: blue;
     }
-    
 
     .trendingCardContainer {
       width: 45%; // Use percentage for width
@@ -103,39 +102,39 @@
     }
 
     h3 {
-      font-family: 'Archivo', sans-serif;
+      font-family: "Archivo", sans-serif;
       font-size: 2rem; // Use rem for font size
       font-weight: 800;
       text-align: left;
       margin-bottom: 14px;
-      color: #276EBC; // Optional: Add color to make text visible over background
+      color: #276ebc; // Optional: Add color to make text visible over background
     }
 
     p {
-      font-family: 'Archivo', sans-serif;
+      font-family: "Archivo", sans-serif;
       font-size: 1.25rem; // Use rem for font size
       font-weight: 100;
       line-height: 1.5; // Use unitless line height
       letter-spacing: 0.02em;
       text-align: left;
-     // margin-bottom: 23px;
+      // margin-bottom: 23px;
     }
 
     .customOfferCode {
-      font-family: 'Archivo', sans-serif;
+      font-family: "Archivo", sans-serif;
       font-size: 1.25rem; // Use rem for font size
       font-weight: 700;
       line-height: 1.5; // Use unitless line height
       text-align: center; // Center text horizontally
       width: auto; // Allow width to adjust
       padding: 0.5rem; // Use rem for padding
-      background-color: #D4E9FF;
+      background-color: #d4e9ff;
       border-radius: 5px;
       margin-bottom: 32px;
     }
 
     .customOfferValidity {
-      font-family: 'Archivo', sans-serif;
+      font-family: "Archivo", sans-serif;
       font-size: 1rem; // Use rem for font size
       font-weight: 100;
       line-height: 1.5; // Use unitless line height
@@ -183,7 +182,7 @@
         cursor: pointer;
 
         &.active {
-          background-color: #276EBC;
+          background-color: #276ebc;
         }
       }
     }
@@ -192,10 +191,7 @@
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .trendingOffers {
-   
-  
     &Container {
-    
       .SectionTitle {
         margin: 14px auto; // Reduce margin by 30%
 
@@ -255,8 +251,6 @@
     }
   }
 }
-
-
 
 @media (min-width: 1400px) and (max-width: 1550px) {
   .trendingOffers {
@@ -321,11 +315,195 @@
   }
 }
 
+// @media (max-width: 768px) {
+//   .trendingOffers {
+//     display: none;
+//   }
+// }
 
-
-
-@media (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .trendingOffers {
-    display: none;
+    width: 100vw;
+    height: auto;
+
+    &Container {
+      width: 95%;
+      padding: 1.5rem;
+      margin: 2rem auto;
+
+      .SectionTitle {
+        margin: 1rem auto;
+        text-align: center;
+
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+
+      .carousel {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .trendingOffersContainerCards {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 1rem 0;
+
+        /* Hide scrollbar */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .trendingCardContainer {
+        flex: 0 0 85%;
+        width: 85%;
+        min-height: auto;
+        scroll-snap-align: start;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .offerImage {
+          flex-shrink: 0;
+          width: 30%;
+          height: 50%;
+          margin: 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .offerContent {
+          // flex: 1;
+          // margin-left: 0;
+
+          h3 {
+            font-size: 1rem;
+            // margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 1rem;
+            // margin-bottom: 0.5rem;
+          }
+
+          .customOfferCode {
+            font-size: 1rem;
+            // padding: 0.25rem 0.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .customOfferValidity {
+            font-size: 0.875rem;
+          }
+        }
+      }
+
+      .carousel-controls {
+        display: none; // Hide arrows on mobile
+      }
+
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          margin: 0 4px;
+
+          &.active {
+            width: 24px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .trendingOffers {
+    &Container {
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+
+      .SectionTitle {
+        h1 {
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 0.875rem;
+        }
+      }
+
+      .trendingCardContainer {
+        flex: 0 0 90%;
+        width: 90%;
+        height: 170px;
+        padding: 0.75rem;
+
+        .offerContent {
+          h3 {
+            font-size: 1.25rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+          }
+
+          .customOfferCode {
+            font-size: 0.875rem;
+          }
+
+          .customOfferValidity {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .trendingOffersContainer {
+    background-color: white;
+    margin: -7rem auto;
+
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .trendingOffersContainer .trendingCardContainer {
+    background-color: #f6f1f1;
+    flex: 0 0 90%;
+    width: 90%;
+    height: 170px;
+    padding: 0.75rem;
   }
 }

@@ -676,30 +676,78 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
             </div>
           </Modal>
 
-          <div onClick={handleDateOpen} className="homeTimingContainer">
+          <div
+            onClick={handleDateOpen}
+            style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          >
             <SearchPageHeadingHome
-              icon={<WatchLaterIcon fontSize="small" color="primary" />}
-              title="Date & Time"
+              icon={
+                isMobile ? null : (
+                  <WatchLaterIcon fontSize="small" color="primary" />
+                )
+              }
+              title={isMobile ? "" : "Date & Time"}
               description={
-                isDateTimeSelected ? (
-                  <>
-                    {formatDate(dateRange[0].startDate, "start")}{" "}
-                    <div style={{ paddingLeft: "10px", paddingRight: "10px" }}>
-                      {" "}
-                      <ArrowForwardIcon color="primary" fontSize="small" />{" "}
+                isMobile ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      width: "100%",
+                      gap: "12px",
+                    }}
+                  >
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <WatchLaterIcon
+                        fontSize="small"
+                        color="primary"
+                        style={{ marginRight: "8px" }}
+                      />
+                      {isDateTimeSelected
+                        ? formatDate(dateRange[0].startDate, "start")
+                        : "Start Time"}
                     </div>
-                    {formatDate(dateRange[0].endDate, "end")}
-                  </>
-                ) : (
-                  <>
-                    Start Time
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <WatchLaterIcon
+                        fontSize="small"
+                        color="primary"
+                        style={{ marginRight: "8px" }}
+                      />
+                      {isDateTimeSelected
+                        ? formatDate(dateRange[0].endDate, "end")
+                        : "End Time"}
+                    </div>
+                  </div>
+                ) : isDateTimeSelected ? (
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>{formatDate(dateRange[0].startDate, "start")}</span>
                     <ArrowForwardIcon
                       color="primary"
                       fontSize="small"
-                      sx={{ mx: "20px" }}
+                      style={{ margin: "0 12px" }}
                     />
-                    End Time
-                  </>
+                    <span>{formatDate(dateRange[0].endDate, "end")}</span>
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      width: "100%",
+                    }}
+                  >
+                    <span>Start Time</span>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <ArrowForwardIcon
+                        color="primary"
+                        fontSize="small"
+                        style={{ margin: "0 20px" }}
+                      />
+                      <span>End Time</span>
+                    </div>
+                  </div>
                 )
               }
               maskDescColor={!isDateTimeSelected}
@@ -715,7 +763,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
         }}
       >
         <CssButtonSolid
-          title="Get Your Car"
+          title={isMobile ? "Get your Car" : "Search Cars"}
           backgroundColor="#276EBC"
           textColor="#FFFFFF"
           fontSize="1rem"
@@ -723,6 +771,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
           height="50px"
           border="1px solid #276EBC"
           onClick={handleGetCar}
+          className="homeGetCarButton"
         />
       </div>
     </div>

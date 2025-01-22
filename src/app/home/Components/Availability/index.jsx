@@ -17,11 +17,11 @@ const Availability = () => {
           <h1 className="avail__top__title">
             Hit the Road: Schedule Your Drive
           </h1>
+        </div>
+        <div className="availabilityContainerContent">
           <p className="avail__bottom__title">
             30% OFF on first ride, bid your ride now{" "}
           </p>
-        </div>
-        <div className="availabilityContainerContent">
           <p>App available on</p>
           <div className="availabilityContainerContentBadges">
             <a

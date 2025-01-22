@@ -26,8 +26,10 @@ export default function Home() {
       <Navbar />
       <div className="home">
         <HeroSection />
-        <TrendingOffers />
-        <StepsToBid />
+        <div className="order">
+          <TrendingOffers className="order-2-mob" />
+          <StepsToBid className="order-1-mob" />
+        </div>
         <PromisesAndCommitments />
         <OperatingZones />
         <Testimonials />

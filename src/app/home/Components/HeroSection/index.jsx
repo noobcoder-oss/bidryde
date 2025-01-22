@@ -21,7 +21,6 @@ const HeroSection = () => {
       <div className="heroSectionContainer">
         <div className="heroSectionContainer__left">
           <div className="heroSectionContainer__left-top">
-            <div className="mob__title"></div>
             <h1 className="desk__title">BID YOUR RYDE</h1>
             <p>Best self-drive car rentals at affordable price</p>
           </div>
@@ -51,15 +50,15 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
+          <div className="heroSectionContainer__right">
+            <Image src={assets.images.heroBgWeb} alt="herosection-image" />
+          </div>
           <div className="heroSectionContainer__left-bottom">
             <p className="heading2">Reserve your drive now</p>
             <div className="heroSectionContainer__left-bottomWrapper">
               <LocationDateTimePickerHome actionHandler={handleGetYourCar} />
             </div>
           </div>
-        </div>
-        <div className="heroSectionContainer__right">
-          <Image src={assets.images.heroBgWeb} alt="herosection-image" />
         </div>
       </div>
     </div>

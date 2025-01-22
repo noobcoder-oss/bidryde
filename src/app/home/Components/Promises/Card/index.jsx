@@ -11,11 +11,13 @@ const Card = ({ data }) => {
           <p className="promiseCardContainer__ContentTitle">
             {data.overlayContent.title}
           </p>
-          <span className="">{data.overlayContent.content}</span>
-          {console.log(data.overlayContent.content)}
+          {/* {console.log(data.overlayContent.content)} */}
         </div>
         <h3>{data.firstLine}</h3>
         <h3>{data.secondLine}</h3>
+        <span className="promiseCardContainer__ContentContent">
+          {data.overlayContent.content}
+        </span>
       </div>
     </div>
   );

@@ -113,10 +113,16 @@
   }
 
   .homeModalButtonContainer {
-    flex-direction: row; /* Keep buttons in a row */
-    justify-content: center; /* Center buttons horizontally */
-    align-items: center; /* Center buttons vertically */
-    gap: 1rem; /* Add spacing between buttons */
-    margin-top: 10%; /* Retain margin */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeGetCarButton {
+    width: 280px;
   }
 }
