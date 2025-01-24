@@ -133,7 +133,7 @@
   }
   .heroSectionContainer__left-bottom {
     position: absolute;
-    top: 410px;
+    top: 420px;
     width: 90%;
     height: 221px;
     // max-height: 128px;
@@ -150,5 +150,12 @@
   .heroSectionContainer__left-bottom {
     position: absolute;
     top: 420px;
+  }
+}
+
+@media screen and (width: 450px) {
+  .heroSectionContainer__left-bottom {
+    position: absolute;
+    top: 400px;
   }
 }
