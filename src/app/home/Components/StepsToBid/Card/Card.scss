@@ -374,8 +374,8 @@
 
     &Container {
       img {
-        height: 5rem !important;
-        width: 5rem;
+        height: 8rem !important;
+        width: 8rem;
       }
     }
 
@@ -393,10 +393,12 @@
   .card.card-4 {
     width: 100vw;
     margin-left: 0;
+    padding: 0;
   }
 
   .card.card-2,
   .card.card-4 {
     margin-right: 0;
+    padding: 0;
   }
 }

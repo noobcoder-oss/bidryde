@@ -52,6 +52,7 @@ const MIN_RENTAL_TIME = 12;
 
 const LocationDateTimePickerHome = ({ actionHandler }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [gap, setGap] = useState(false);
 
   const [showPicker, setShowPicker] = useState(false);
   const [startTime, setStartTime] = useState(9);
@@ -347,7 +348,9 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
   useEffect(() => {
     const handleResize = () => {
       const isMobileDevice = window.innerWidth <= 1180;
+      const iphone = window.innerWidth > 400 ? "58px" : "26px";
       setIsMobile(isMobileDevice);
+      setGap(iphone);
     };
 
     handleResize();
@@ -695,7 +698,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                       justifyContent: "space-between",
                       alignItems: "center",
                       width: "100%",
-                      gap: "58px",
+                      gap: gap,
                     }}
                   >
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -767,7 +770,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
           backgroundColor="#276EBC"
           textColor="#FFFFFF"
           fontSize="1rem"
-          width="200px"
+          width={isMobile ? "280px" : "200px"}
           height="50px"
           border="1px solid #276EBC"
           onClick={handleGetCar}

@@ -126,3 +126,29 @@
     width: 280px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .isMobile380 {
+    gap: 26px;
+  }
+  .heroSectionContainer__left-bottom {
+    position: absolute;
+    top: 420px;
+    width: 90%;
+    height: 221px;
+    // max-height: 128px;
+    z-index: 19;
+    background-color: #fff;
+    border-radius: 15px;
+    // padding: 1rem;
+    order: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (width: 390px) {
+  .heroSectionContainer__left-bottom {
+    position: absolute;
+    top: 420px;
+  }
+}
