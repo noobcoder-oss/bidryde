@@ -70,6 +70,12 @@
   padding: clamp(1rem, 2vw, 2rem);
 }
 
+.heroSectionContainer__left-middleLogos img {
+  width: 140px;
+  height: 45.5px;
+  object-fit: contain;
+}
+
 @media (max-width: 1024px) {
   .heroSectionContainer {
     flex-direction: column;
@@ -88,6 +94,7 @@
   }
 
   .heroSectionContainer__left-middleLogos {
+    width: 20px;
     justify-content: center;
   }
 
@@ -248,5 +255,14 @@
   }
   .heroSectionContainer__left-top p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1600px) {
+  .heroSectionContainer__left-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
   }
 }
