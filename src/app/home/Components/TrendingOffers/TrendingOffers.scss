@@ -507,3 +507,12 @@
     padding: 0.75rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .trendingOffersContainer {
+    background-color: white;
+    margin: -7rem auto;
+    width: 100%;
+    margin: -61px;
+    padding: 1rem;
+  }
+}

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 // components/CarAnimation.js
-import React, { useState } from 'react';
-import { useSpring, animated, config } from 'react-spring';
-import { Scrollama, Step } from 'react-scrollama';
+import React, { useState } from "react";
+import { useSpring, animated, config } from "react-spring";
+import { Scrollama, Step } from "react-scrollama";
 
 const CarAnimation = ({ path }) => {
   const [scrollIndex, setScrollIndex] = useState(0);
@@ -20,17 +20,17 @@ const CarAnimation = ({ path }) => {
   return (
     <div
       style={{
-        position: 'relative',
-        height: '100vh',
-        backgroundColor: 'black',
-        overflow: 'hidden',
+        position: "relative",
+        height: "100vh",
+        backgroundColor: "black",
+        overflow: "hidden",
       }}
     >
       {/* Scrollama for triggering animations */}
       <Scrollama onStepEnter={handleStepEnter}>
         {path.map((_, index) => (
           <Step key={index} data={index}>
-            <div style={{ height: '100vh' }}>{/* Spacer for each step */}</div>
+            <div style={{ height: "100vh" }}>{/* Spacer for each step */}</div>
           </Step>
         ))}
       </Scrollama>
@@ -38,25 +38,25 @@ const CarAnimation = ({ path }) => {
       {/* Render path points */}
       <div
         style={{
-          position: 'absolute',
-          top: '0',
-          left: '0',
-          right: '0',
-          bottom: '0',
+          position: "absolute",
+          top: "0",
+          left: "0",
+          right: "0",
+          bottom: "0",
         }}
       >
         {path.map((point, index) => (
           <div
             key={index}
             style={{
-              position: 'absolute',
+              position: "absolute",
               left: `${point}%`,
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: '10px',
-              height: '10px',
-              borderRadius: '50%',
-              backgroundColor: 'white',
+              top: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              backgroundColor: "white",
             }}
           />
         ))}
@@ -65,19 +65,19 @@ const CarAnimation = ({ path }) => {
       {/* Car component with smooth transition */}
       <animated.div
         style={{
-          position: 'absolute',
-          bottom: '10%', // Adjust bottom offset as needed
+          position: "absolute",
+          bottom: "10%", // Adjust bottom offset as needed
           left: carAnimation.x.interpolate((x) => `${x}%`),
-          transform: 'translate(-50%, 0)',
+          transform: "translate(-50%, 0)",
         }}
       >
         {/* Render your car or custom element here */}
         <div
           style={{
-            width: '50px',
-            height: '50px',
-            backgroundColor: 'white',
-            borderRadius: '10px', // Example: Make it look like a car
+            width: "50px",
+            height: "50px",
+            backgroundColor: "white",
+            borderRadius: "10px", // Example: Make it look like a car
           }}
         />
       </animated.div>

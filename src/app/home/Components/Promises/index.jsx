@@ -1,15 +1,14 @@
-"use client"; // Add this line at the top of the file
+"use client";
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./Promises.scss";
-import { Divider, Dividerwhite } from "@/Components";
+import { Divider } from "@/Components";
 import { IconButton } from "@mui/material";
 import { assets } from "@/assets";
 import Card from "./Card";
 import { uid } from "react-uid";
-import { useRef, useEffect, useState } from "react";
 import SwiperCore from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -79,44 +78,41 @@ const cardsInfo = [
 
 const PromisesAndCommitments = () => {
   const swiperRef = useRef(null);
-  const goNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
   const [isMobile, setIsMobile] = useState(false);
   const [isTab, setIsTab] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobileDevice = window.innerWidth <= 500;
+      const isMobileDevice = window.innerWidth <= 960;
       const isTabDevice = window.innerWidth <= 1354;
       setIsMobile(isMobileDevice);
       setIsTab(isTabDevice);
     };
     handleResize();
-
     window.addEventListener("resize", handleResize);
-  });
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const goNext = () => {
+    if (swiperRef.current?.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiperRef.current?.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
 
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.activeIndex);
   };
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  // Define the handleDotClick function
   const handleDotClick = (index) => {
     setActiveIndex(index);
-    // You can also make the swiper jump to the selected slide
-    if (swiperRef.current && swiperRef.current.swiper) {
+    if (swiperRef.current?.swiper) {
       swiperRef.current.swiper.slideTo(index);
     }
   };
@@ -124,11 +120,14 @@ const PromisesAndCommitments = () => {
   return (
     <div className="PromisesAndCommitments">
       <div className="PromisesAndCommitmentsContainer">
-        <div className="scrollControllers">
-          <IconButton onClick={goPrev}>
-            <ArrowBackIcon />
-          </IconButton>
-        </div>
+        {!isMobile && (
+          <div className="scrollControllers">
+            <IconButton onClick={goPrev}>
+              <ArrowBackIcon />
+            </IconButton>
+          </div>
+        )}
+
         <div className="PromisesAndCommitmentsContainerRight">
           <div className="SectionTitle">
             <h1>Why BidrYde</h1>
@@ -142,24 +141,48 @@ const PromisesAndCommitments = () => {
 
           <div className="CardSection">
             <Swiper
-              spaceBetween={isMobile ? 80 : isTab ? 100 : 30}
-              slidesPerView={isMobile ? 1 : isTab ? 2 : 3}
+              spaceBetween={isMobile ? 20 : isTab ? 100 : 30}
+              slidesPerView={isMobile ? "auto" : isTab ? 2 : 3}
+              centeredSlides={isMobile}
               ref={swiperRef}
               onSlideChange={handleSlideChange}
+              style={{
+                width: "100%",
+                overflow: isMobile ? "visible" : "hidden",
+              }}
+              className={isMobile ? "mobile-swiper" : ""}
             >
               {cardsInfo.map((card) => (
-                <SwiperSlide key={uid(card)}>
-                  <Card data={card} />
+                <SwiperSlide
+                  key={uid(card)}
+                  style={{
+                    width: isMobile ? "calc(70vw)" : "auto",
+                    marginRight: isMobile ? "10px" : "0",
+                  }}
+                >
+                  <Card
+                    data={{
+                      ...card,
+                      backgroundColor: isMobile
+                        ? card.mobileBackgroundColor
+                        : cardsInfo.indexOf(card) % 2 === 1
+                        ? "#0000FF"
+                        : "inherit",
+                    }}
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
         </div>
-        <div className="scrollControllers">
-          <IconButton onClick={goNext}>
-            <ArrowForwardIcon />
-          </IconButton>
-        </div>
+
+        {!isMobile && (
+          <div className="scrollControllers">
+            <IconButton onClick={goNext}>
+              <ArrowForwardIcon />
+            </IconButton>
+          </div>
+        )}
       </div>
 
       {isMobile && (
@@ -168,7 +191,7 @@ const PromisesAndCommitments = () => {
             <div
               key={index}
               className={`dot ${activeIndex === index ? "active" : ""}`}
-              onClick={() => handleDotClick(index)} // Add the click handler
+              onClick={() => handleDotClick(index)}
             ></div>
           ))}
         </div>

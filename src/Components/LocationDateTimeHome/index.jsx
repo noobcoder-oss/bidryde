@@ -695,7 +695,7 @@ const LocationDateTimePickerHome = ({ actionHandler }) => {
                       justifyContent: "space-between",
                       alignItems: "center",
                       width: "100%",
-                      gap: "12px",
+                      gap: "58px",
                     }}
                   >
                     <div style={{ display: "flex", alignItems: "center" }}>

@@ -213,8 +213,30 @@
   .SectionTitle h1 {
     font-size: xx-large;
   }
+  .stepsToBidAnimation svg {
+    display: none;
+  }
 
-  .SectionTitle p {
-    font-size: 0.8rem;
+  .heroSectionContainer__left-top p {
+    font-size: 1rem;
+  }
+
+  .stepsToBidContainer .SectionTitle p {
+    font-size: 12px;
+  }
+  .card.card-1 {
+    width: none;
+    margin: 0;
+  }
+  .card .digit-4 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .home .order > div:nth-child(2) {
+    order: 1;
+    max-height: 1500px;
   }
 }

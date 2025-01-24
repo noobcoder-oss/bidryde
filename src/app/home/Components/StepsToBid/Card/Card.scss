@@ -36,14 +36,14 @@
     }
   }
   h6 {
-    color: #2B3970;
+    color: #2b3970;
   }
 
   .digit-1,
   .digit-2,
   .digit-3,
   .digit-4 {
-    color: #276EBC;
+    color: #276ebc;
     margin-top: 30px;
   }
 
@@ -126,7 +126,7 @@
     &.card-2,
     &.card-4 {
       width: 16.9vw;
-      margin-right: -100px; 
+      margin-right: -100px;
       margin-bottom: -30px;
     }
 
@@ -140,14 +140,14 @@
     }
 
     h6 {
-      color: #2B3970;
+      color: #2b3970;
     }
 
     .digit-1,
     .digit-2,
     .digit-3,
     .digit-4 {
-      color: #276EBC;
+      color: #276ebc;
       margin-top: 21px; // Reduce margin-top by 30%
     }
 
@@ -206,9 +206,7 @@
   }
 }
 
-
 @media (min-width: 1400px) and (max-width: 1550px) {
-
   .card {
     display: flex;
     align-items: center;
@@ -230,7 +228,7 @@
       margin-left: -1%;
       margin-top: -5%;
       margin-bottom: 15%;
-  }
+    }
 
     &.card-2,
     &.card-4 {
@@ -249,14 +247,14 @@
     }
 
     h6 {
-      color: #2B3970;
+      color: #2b3970;
     }
 
     .digit-1,
     .digit-2,
     .digit-3,
     .digit-4 {
-      color: #276EBC;
+      color: #276ebc;
       margin-top: 21px; // Reduce margin-top by 30%
     }
 
@@ -317,44 +315,88 @@
 
 @media screen and (max-width: 830px) {
   .card {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: 15px;
     letter-spacing: 0.05em;
     border-radius: 20px;
     aspect-ratio: 1;
-    /* Maintain square aspect ratio */
+    width: 90vw; /* Adjust width to prevent cards from being too large */
+    margin: 10px; /* Add some margin between cards */
 
     &Container {
       width: 100%;
-      padding: 0;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       img {
-        height: 80% !important;
-        width: 5rem;
+        height: 6rem !important; /* More consistent image height */
+        width: 6rem; /* Consistent image width */
         margin: 0.5rem;
         object-fit: contain;
       }
 
       h6 {
         margin: 10px;
+        text-align: center;
+        font-size: 0.9rem;
       }
+    }
+
+    .digit-1,
+    .digit-2,
+    .digit-3,
+    .digit-4 {
+      font-size: 3rem;
+      margin-top: 10px;
+      text-align: center;
     }
   }
 
-  .translateLeft {
-    transform: translateX(-20%);
+  .translateLeft,
+  .translateRight {
+    transform: translateX(0); /* Remove translation on mobile */
   }
 
-  .translateRight {
-    transform: translateX(20%);
+  .leftShadow,
+  .rightShadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
   }
 }
 
 @media screen and (max-width: 500px) {
   .card {
-    width: 50vw;
-    aspect-ratio: 1;
-    /* Keep proportional dimensions */
+    width: 95vw; /* Larger width on very small screens */
+    margin: 15px auto; /* Center cards and add vertical spacing */
+
+    &Container {
+      img {
+        height: 5rem !important;
+        width: 5rem;
+      }
+    }
+
+    .digit-1,
+    .digit-2,
+    .digit-3,
+    .digit-4 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .card.card-1,
+  .card.card-2,
+  .card.card-3,
+  .card.card-4 {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .card.card-2,
+  .card.card-4 {
+    margin-right: 0;
   }
 }
