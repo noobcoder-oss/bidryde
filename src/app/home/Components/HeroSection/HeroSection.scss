@@ -176,10 +176,11 @@
   /* Reserve your ride - Third */
   .heroSectionContainer__left-bottom {
     width: 100%;
+    max-height: 230px;
     background-color: #fff;
     border-radius: 15px;
     padding: 1rem;
-    order: 3; /* Ensure this is the third section */
+    order: 3;
 
     .heading2 {
       display: none;
